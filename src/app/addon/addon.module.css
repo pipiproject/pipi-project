@@ -1,0 +1,76 @@
+.addonContainer {
+  display: flex;
+  min-height: calc(100vh - 160px);
+  position: relative;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebarTitle {
+  font-size: 26px;
+  padding: 15px 30px;
+  color: #2c3e50;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, #e9ecef 0%, #dee2e6 50%, #e9ecef 100%);
+  margin: 15px 0;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuList li {
+  padding: 14px 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #495057;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+.menuList li:hover {
+  background-color: #f1f3f5;
+  color: #2c3e50;
+  padding-left: 35px;
+}
+
+.menuList li.selected {
+  color: #e74c3c;
+  font-weight: 500;
+  background-color: #fff;
+  position: relative;
+}
+
+.menuList li.selected::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #e74c3c;
+}
+
+.content {
+  flex: 1;
+  background-color: white;
+  margin-left: 240px;
+  padding: 30px;
+} 
